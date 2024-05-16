@@ -165,8 +165,8 @@ public static class WebApplicationBuilderExtensions
                     }
                 });
                 
-                var filePath = Path.Combine(AppContext.BaseDirectory, "Itis.MyTrainings.Api.Web.xml");
-                c.IncludeXmlComments(filePath);
+                // var filePath = Path.Combine(AppContext.BaseDirectory, "Itis.MyTrainings.Api.Web.xml");
+                // c.IncludeXmlComments(filePath);
             });
     
     /// <summary>
