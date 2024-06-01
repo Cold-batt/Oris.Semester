@@ -1,7 +1,7 @@
 {
   "name": "itis-ollya-web",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -14,6 +14,6 @@
   "dependencies": {
     "axios": "^1.6.8",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.22.3"
+    "react-router-dom": "^6.23.1"
   }
 }

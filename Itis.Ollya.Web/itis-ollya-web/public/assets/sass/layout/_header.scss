@@ -135,15 +135,6 @@
                                     color: $theme-color7;
                                 }
                             }
-                            &.active {
-                                >a {
-                                    color: $theme-color7;
-                                    &::after, &::before {
-                                        @extend %bg-theme-color7;
-                                    }
-                                }
-                            }
-                            a {}
                             ul {
                                 li {
                                     a {
@@ -231,9 +222,6 @@
         li {
             @extend %d-block;
             @extend %p-rel;
-            @include breakpoint(lg) {
-                display: inline-block;
-            }
             &:last-child {
                 a {
                     @include breakpoint(max-lg) {
@@ -248,10 +236,6 @@
                     top: calc(100% + 0px);
                     z-index: 99999;
                 }
-                >a {
-                    // text-decoration: line-through;
-                    color: $theme-color;
-                }
             }
             &.open {
                 @include breakpoint(max-lg) {
@@ -261,21 +245,9 @@
                         top: calc(100% + 0px);
                         z-index: 99999;
                     }
-                    >a {
-                        // text-decoration: line-through;
-                        color: $theme-color;
-                    }
                 }
             }
-            &.active {
-                >a {
-                    text-decoration: line-through;
-                    color: $theme-color;
-                    &::after, &::before {
-                        @extend %bg-theme-color;
-                    }
-                }
-            }
+            
             a {
                 color: $title-color;
                 padding: 10px 25px !important;
@@ -292,16 +264,6 @@
                 box-shadow: 0 0 5px rgba($title-color, $alpha: .1);
                 @extend %d-none;
                 @include add-prefix(border-radius, (4px));
-                // @include add-prefix(transition, (all .3s ease));
-                @include breakpoint(lg) {
-                    position: absolute;
-                    top: calc(100% + 50px);
-                    opacity: 0;
-                    width: 200px;
-                    visibility: hidden;
-                    display: block !important;
-                    transition: all .3s ease;
-                }
                 li {
                     @extend %d-block;
                     &:last-child {
